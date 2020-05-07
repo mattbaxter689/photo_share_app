@@ -4,11 +4,8 @@ Some steps and future potential ideas for the app
 
 app idea: image library app using Flask and sqlalchemy
 
-Set up:
-- need to set up the git repository
-- get the basic html set up
-
 Begin adding some basic functionality:
+- button that allows users to switch between pages
 - have a button that allows you to upload pictures
 	- these pictures get added to the database along with a unique 	  identifier, the picture itself, and the date uploaded
 - display the pictures that have been saved in like a moving, or a rolling format (where they fade in to screen for a few seconds and then fade out)
