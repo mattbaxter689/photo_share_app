@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block head %} 
+<title>Home Page</title>
+{% endblock %}
+
+
+{% block body %} 
+<h2>Welcome to the Photo Sharing App!</h2>
+<hr>
+
+<h3>Pages</h3>
+<form action="/to_photos/", method="post">
+    <button type="submit" name="photoBtn">To Photos</button>
+</form>
+
+{% endblock %}

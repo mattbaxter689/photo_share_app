@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block head %} 
+<title>Photos</title>
+{% endblock %}
+
+
+{% block body %} 
+<h2>Your Photos!</h2>
+<hr>
+
+<h3>Pages</h3>
+<form action="/to_home/" method="post">
+    <button type="submit" name="homeBtn">To Home</button>
+</form>
+
+{% endblock %}
