@@ -6,6 +6,11 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/photos')
+def photos():
+    return render_template('photos.html')
+
+#the 2 following routes are for buttons that allow users to move to the "Photos" tab, and back to the home page
 @app.route('/to_photos/', methods=['POST'])
 def to_photos():
     return render_template('photos.html')
@@ -13,10 +18,6 @@ def to_photos():
 @app.route('/to_home/', methods=['POST'])
 def to_home():
     return render_template('index.html')
-
-@app.route('/photos')
-def photos():
-    return render_template('photos.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
