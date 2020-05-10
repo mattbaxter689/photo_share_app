@@ -1,5 +1,16 @@
 from flask import Flask , render_template, request, redirect, url_for
 
+'''
+- Need input for user to select photo from their computer
+- Then need to create button to download this picutre to a database
+- Each photo will be given a new id and the date they were posted
+- photos will then all be displayed on the home page when it loads
+- Will be allowed to add caption to photos
+- user can select a photo to view one specific photo in another page
+- they could even be allowed to update the caption of the photo
+- then need to update the styling of the page
+'''
+
 app = Flask(__name__)
 
 @app.route('/')
